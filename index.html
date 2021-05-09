@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich Text</title>
+    <link rel="stylesheet" href="mystyle.css">
+
+</head>
+<body>
+    <h1>Rich Text</h1>
+    <div class="main-content">
+        <!--Barra de funções-->
+        <div class="text-editor-header">
+            
+            <!--Fonte-->
+            <select class="selector" onchange="option('fontName',this.value)">
+                    <option value="Arial" class="selector">Arial</option>
+                    <option value="Comic Sans MS" class="selector">Comic Sans MS</option>
+                    <option value="Courier" class="selector">Courier</option>
+                    <option value="Georgia" class="selector">Georgia</option>
+                    <option value="Tahoma" class="selector">Tahoma</option>
+                    <option value="Times New Roman" class="selector">Times New Roman</option>
+                    <option value="Verdana" class="selector">Verdana</option>
+                </select>
+              
+                <!--Tamanho da fonte-->
+                <select class="selector" onchange="option('fontSize',this.value)">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>    
+                </select>
+
+                <!--Cor da fonte-->
+               Cor da fonte <input type="color" onchange="option('foreColor',this.value)" />
+           
+              
+               <!--Botões de alteração-->
+            <button type="button" class="btn" data-element="bold">
+                <em class="fas fa-bold"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="italic">
+                <em class="fas fa-italic"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="underline">
+                <em class="fas fa-underline"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="insertUnorderedList">
+                <em class="fas fa-list-ul"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="insertOrderedList">
+                <em class="fas fa-list-ol"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="createLink">
+                <em class="fas fa-link"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="justifyLeft">
+                <em class="fas fa-align-left"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="justifyCenter">
+                <em class="fas fa-align-center"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="justifyRight">
+                <em class="fas fa-align-right"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="justifyFull">
+                <em class="fas fa-align-justify"></em>
+            </button>
+    
+            <button type="button" class="btn" data-element="insertImage">
+                <em class="fas fa-image"></em>
+            </button>
+            <!--Fim dos botões de alteração-->
+       
+        </div>
+        <!--Fim da barra de funções-->
+
+       
+        <!--Parte editável-->
+        <div class="text-editor">
+        
+            <div class="content" contenteditable="true"></div>
+    
+        </div>
+    </div>
+    <!--FIm da Parte editável-->
+    
+
+    <script src="myscript.js"></script>
+    <script src="https://kit.fontawesome.com/4938f68474.js" crossorigin="anonymous"></script>
+</body>
+</html>
